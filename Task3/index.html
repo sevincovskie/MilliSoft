@@ -257,7 +257,7 @@
     <br>
 
     <!---task6-->
-    <table border="1">
+    <table border="1"  style="width: 50%; height: 50px;">
         <tr>
             <td rowspan="2">A</td>
             <td>B</td>
@@ -336,19 +336,203 @@
         </thead>
 
         <tr>
-            <td>Monda</td>
-            <td>8:00 a.m</td>
-            <td>5:00 a.m</td>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 a.m</td>
             <td>Introduction to XML</td>
+            
+            
         </tr>
         <tr>
+            <td>Validity: DTD and Relax NG</td>
+           
+        </tr>
 
+        <tr>
+            <td rowspan="3">Tuesday</td>
             <td>8:00 a.m</td>
-            <td>5:00 a.m</td>
-            <td>Introduction to XML</td>
+            <td>11:00 a.m</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m</td>
+            <td>2:00 p.m</td>
+            <td rowspan="2">XSL transformation</td>
+            
+        </tr>
+
+        <tr>
+            <td>2:00 a.m</td>
+            <td>5:00 p.m</td>
+
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XLS Formating Objects</td>
         </tr>
 
     </table>
+
+    <br>
+    <br>
+
+    <!---Task9-->
+    <ul>
+        
+        <li>DSA</li>
+        <ul>
+            <li>Array</li>
+            <li>Linked List</li>
+            <li>stack</li>
+            <li>Queue</li>
+        </ul>
+
+        <li>Web Technologies</li>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <li>Aptitude</li>
+        <li>Gate</li>
+        <li>Placement</li>
+
+    </ul>
+
+
+    <!--Task10-->
+
+    <form action="">
+        <fieldset>
+            <legend>Student Info</legend>
+            
+            <label for="name">Name:</label>
+            <br>
+            <input type="text">
+            <br>
+            <br>
+            <label for="name">City:</label>
+            <br>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Login Details</legend>
+            
+            <label for="name">Email ID:</label>
+            <br>
+            <input type="email">
+            <br>
+            <br>
+            <label for="name">Password:</label>
+            <br>
+            <input type="password">
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <span>Undergraduate:</span>
+            
+            <input type="radio" name="" id="">
+            <label for="">Yes</label>
+            
+            <input type="radio" name="" id="">
+            <label for="">No</label>
+
+            <p>Subject:</p>
+            <input type="checkbox" name="" id="">
+            <label for="">English</label>
+            <br>
+            <input type="checkbox" name="" id="">
+            <label for="">Math</label>
+            <br>
+            <input type="checkbox" name="" id="">
+            <label for="">Science</label>
+
+
+
+            
+          
+        </fieldset>
+        <br>
+        <br>
+
+        <button type="submit">Finish</button>
+
+    </form>
+
+
+    <br>
+    <br>
+    <div class="form">
+        <h1>Apartment Search</h1>
+
+        <form action="">
+            <fieldset>
+                <legend>Occupant's Information</legend>
+                <p>Occupant's Name</p>
+                <input type="text"placeholder="First name">
+                <input type="text"placeholder="Last name">
+                <br>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" id="" placeholder="Format: 123-456-7890">
+                <br>
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id=""placeholder="email address">
+
+
+            </fieldset>
+
+            <br>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Apartment Information</legend>
+                <p>Choose apartment size</p>
+                <select name="" id="">
+                    <option value="">Studio</option>
+                </select>
+                <br>
+
+                <p>Rental Term:</p>
+                <input type="radio" name="" id="">
+                <label for="">Short Term</label>
+                <br>
+                <input type="radio" name="" id="">
+                <label for="">Long Term</label>
+                <br>
+                <input type="radio" name="" id="">
+                <label for="">Both are OK</label>
+
+                <br>
+
+                <p>Features:</p>
+                <input type="checkbox" name="" id="">
+                <label for="">Balcony</label>
+                <input type="checkbox" name="" id="">
+                <label for="">Higher Floor</label>
+                <input type="checkbox" name="" id="">
+                <label for="">Proximity to Elevators</label>
+
+                <br>
+
+                <p>Start date:</p>
+                <input type="date" name="" id="">
+
+                <p>Special Request</p>
+                <textarea name="" id="" cols="60" rows="5" placeholder="Text"></textarea>
+            </fieldset>
+
+            <p>Let us find you the apartment of your dreams...</p>
+            <button type="submit">Submit</button>
+            <button type="submit">Start Over</button>
+        </form>
+    </div>
+
 
 </body>
 
