@@ -1,83 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.task1 p{
-    
-    background-color: aqua;
-    border: 1px solid;
-    width: 80%;
-    
-    
-   
- }
+.task1 p {
+  background-color: aqua;
+  border: 1px solid;
+  width: 80%;
+}
 
- .p2 {
-    text-align: center;
+.p2 {
+  text-align: center;
+}
 
- }
+.p5 {
+  text-align: justify;
+  text-align-last: center;
+}
 
- .p5{
-    text-align: justify;
-    text-align-last: center; 
+/*task2*/
+.task2 p {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(246, 248, 248);
+  text-align: center;
+}
+.task2 .p1 {
+  font-weight: 600;
+}
 
- }
+.task2 .p2 {
+  border: 3px blue solid;
+  font-style: italic;
+}
 
- /*task2*/
- .task2 p{
-    width: 80%;
-    height: 40px;
-    line-height: 40px;
-    background-color: rgb(246, 248, 248);
-    text-align: center;
- }
-  .task2 .p1{
-    font-weight: 600;
-    
-  }
-
-  .task2 .p2{
-    border: 3px blue solid;
-   font-style: italic;
-  }
-
-  .task2 .p3 {
+.task2 .p3 {
   text-decoration: line-through;
   border: 4px dotted black;
-  }
+}
 
-  .task2 .p4 {
-    border: 3px dashed gray;
-    text-decoration:overline;
-  }
+.task2 .p4 {
+  border: 3px dashed gray;
+  text-decoration: overline;
+}
 
-  .task2 .p5 {
-    border: 3px double gray;
-    text-decoration:underline;
-  }
+.task2 .p5 {
+  border: 3px double gray;
+  text-decoration: underline;
+}
 
-  .task2 .p6 {
-      border: 2px solid;
-      border-color:  yellow orangered red blue;
-    text-transform: uppercase;    
-  }
-   
-  .task2 .p7{
-    border: 4px;
-    border-style: solid dotted double dashed;
-    border-color: rgb(246, 248, 248)  purple orangered red;
+.task2 .p6 {
+  border: 2px solid;
+  border-color: yellow orangered red blue;
+  text-transform: uppercase;
+}
 
-  }
+.task2 .p7 {
+  border: 4px;
+  border-style: solid dotted double dashed;
+  border-color: rgb(246, 248, 248) purple orangered rgb(75, 29, 29);
+}
 
-  .task3 {
-    width:20%;
+.task3 {
+  width: 20%;
+  margin: 40px;
+}
 
+.task3 li {
+  padding-left: 10px;
+  background-color: rgb(108, 98, 98);
+  border-bottom: 3px solid black;
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
 
-  }
+/* task 4*/
 
-  .task3  li{
-    padding-left: 10px;
-    background-color: rgb(108, 98, 98);
-    border-bottom: 3px solid black;
-    list-style: none;
-    height: 40px;
-    line-height: 40px;
+.task4 p {
+  width: 13%;
+  padding: 20px 0px;
+  background-color: lightgray;
+  text-align: center;
+}
 
-  }
+.task4 .p1 {
+  border: 3px rgb(182, 198, 103) solid;
+  font-style: italic;
+  text-align: center;
+  margin-left: 120px;
+}
+
+.task4 .p2 {
+  border: 3px rgb(182, 198, 103) dotted;
+  font-style: italic;
+  text-align: center;
+  margin-left: 330px;
+}
+
+.task4 .p3 {
+  border: 3px rgb(182, 198, 103) dashed;
+  font-style: italic;
+  text-align: center;
+  margin-left: 540px;
+}
+.task4 .p4 {
+  border: 3px rgb(182, 198, 103) double;
+  font-style: italic;
+  text-align: center;
+  margin-left: 750px;
+}
+
+/*task5*/
+
+.task5 table {
+  background-color: rgb(187, 190, 193);
+  width: 40%;
+  text-align: center;
+}
+
+.task5 tr:nth-child(2n + 1) {
+  background-color: rgb(244, 249, 249);
+}
+.task5 th,
+tr:first-child {
+  background-color: rgb(187, 190, 193);
+}
+
+/*task6*/
+.task6 {
+  background-color: blue;
+}
+
+.card {
+  width: 40%;
+  height: 500px;
+  /* background-color: rgb(223, 236, 236); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 90px;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1px solid;
+}
