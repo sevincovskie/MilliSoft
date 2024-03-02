@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  /* background-color: blue; */
+}
+
+.logo_page {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 30px;
+  color: #fe7ec9;
+  font: 30px Oswald, sans-serif;
+  /* padding: 30px 20px 20px  80px; */
+}
+
+i {
+  margin-top: 30px;
+  font-size: 30px;
+  color: dimgrey;
+}
+#intro_desc {
+  width: 80%;
+  height: 990px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.intro_title {
+  padding-top: 40px;
+  width: 50%;
+  text-align: center;
+}
+.intro_title h1 {
+  font-weight: 900;
+  padding: 50px;
+  margin: center;
+  color: #488df4;
+  font-size: 80px;
+  font-family: sans-serif;
+}
+.intro_title p {
+  font-weight: 900;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.intro_img img {
+  width: 770px;
+  height: 870px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#group_desc {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: #38c4c1;
+  color: rgb(243, 246, 248);
+}
+
+.group_title {
+  width: 25%;
+  height: 440px;
+  background-color: #98da83;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group_title i {
+  color: white;
+  font-size: 50px;
+}
+
+.group_title:nth-child(2) {
+  background-color: rgb(225, 190, 61);
+}
+
+.group_title:nth-child(3) {
+  background-color: rgb(220, 100, 178);
+}
+.group_title:last-child {
+  background-color: rgb(61, 61, 201);
+}
+
+
+#page_desc {
+  width: 100%;
+  height: 700px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#page_desc h1 {
+  width: 60%;
+  color: #488df4;
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding-top: 120px;
+}
+
+#page_desc p {
+  width: 50%;
+  padding: 70px 20px 20px 60px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  font-family:sans-serif;
+}
+ hr {
+ margin: 30px auto 0; 
+border: 4px solid black;
+width: 75px;
+  
+ }
+
+ #about_desc {
+  width: 100%;
+  height: 1070px;
+  text-align: center;
+ }
+
+ .about_title{
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+ }
+
+ .about_images{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 30px; */
+ }
+ .about_left{
+  height: 700px;
+  width: 60%;
+ }
+ .about_right {
+  width: 40%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ .about_group{
+  width: 270px;
+  height: 332px;
+ }
+ .about_group:nth-child(2){
+  background-color: grey;
+
+  
+ }
+ .about_group:nth-child(1){
+  background-color: grey;
+
+  
+ }
