@@ -43,9 +43,9 @@ li {
   gap: 20px;
   cursor: pointer;
 }
- li:hover {
+li:hover {
   color: #1abc9c;
- }
+}
 
 /* ============section 1===================*/
 
@@ -70,7 +70,7 @@ li {
   padding-top: 100px;
 }
 
- strong {
+strong {
   font-size: 40px;
   /* padding-top: 40px; */
 }
@@ -120,20 +120,23 @@ li {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  padding: 20px 30px 30px ;
+  padding: 20px 30px 30px;
 }
 
 .portfolio_icon i {
   font-size: 40px;
+}
 
-
+.portfolio_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio_icon .star_line {
   width: 100px;
   height: 4px;
   background-color: #212529;
-  
 }
 
 .portfolio_img {
@@ -173,13 +176,12 @@ li {
   opacity: 1;
   background-color: rgba(77, 232, 180, 0.9);
   border-radius: 20px;
-  
 }
 
 /*===section 3=====*/
 
 #about_page {
-  width:100%;
+  width: 100%;
   /* height: 700px; */
   background-color: #1abc9c;
   text-align: center;
@@ -187,8 +189,7 @@ li {
   color: white;
   display: flex;
   flex-direction: column;
- align-items: center;
-  
+  align-items: center;
 }
 
 .about_title {
@@ -201,11 +202,10 @@ li {
   font-size: 30px;
   margin-bottom: 90px;
   gap: 30px;
-  
 }
 
 .about_btn {
-  border: 3px solid  white;
+  border: 3px solid white;
   border-radius: 10px;
   width: 280px;
   height: 70px;
@@ -218,45 +218,39 @@ li {
   font: 15px open sans-serif;
   text-align: center;
   top: 25px;
-  gap: 3px
+  gap: 3px;
 }
 
 /*==section 4=*/
 
 #contact_page {
   width: 100%;
-  /* height: 1000px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 30px ;
- 
+  margin: auto;
+  padding: 70px 0;
+  text-align: center;
 }
 
 .contact_form {
-   /* width: 70%;
-  height: 100px;  */
+  width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 30px ;
   font-size: 30px;
-  border-style: unset ;
+  border-style: unset;
 }
 
-
-.contact_form input, .contact_form textarea{
+.contact_form input,
+.contact_form textarea {
   width: 70%;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 30px ;
+  padding: 50px 30px;
   font-size: 30px;
-  border-style: unset ;
+  border-style: unset;
 }
-
 
 .contact_btn {
   width: 200px;
@@ -266,6 +260,7 @@ li {
   color: #ffffff;
   font: 25px open sans-serif;
   /* flex-direction: row; */
+  display: inline-block;
 }
 
 footer {
@@ -279,12 +274,8 @@ footer {
   gap: 40px;
   font: 25px open sans-serif;
   text-align: center;
-  
- 
 }
 
 .social_icons:hover {
   color: #1abc9c;
-
 }
-
