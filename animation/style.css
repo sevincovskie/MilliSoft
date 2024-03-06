@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animation {
+  width: 80%;
+  height: 700px;
+  margin: 100px auto;
+  padding: 0 100px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.animation div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-iteration-count: infinite;
+  animation-name: changeSize;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.main2 {
+  animation-delay: 0.5s;
+}
+.main3 {
+  animation-delay: 1s;
+}
+.main4 {
+  animation-delay: 1.5s;
+}
+.main5 {
+  animation-delay: 2s;
+}
+
+@keyframes changeSize {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(1.5);
+  }
+}
