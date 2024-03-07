@@ -287,7 +287,7 @@ header img {
 
 #teamSection {
   width: 100%;
-  height: 80vh;
+  height: 800px;
   gap: 20px;
   margin-top: 80px;
   display: flex;
@@ -298,8 +298,8 @@ header img {
   background-color: #e9ecef;
 }
 .person_title {
-   padding: 50px 30px 0px; 
- } 
+  padding: 50px 30px 0px;
+}
 
 .person_title h4 {
   font-size: 30px;
@@ -307,7 +307,7 @@ header img {
   padding-top: 30px;
 }
 
-.section_team >h1 {
+.section_team > h1 {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 40px;
@@ -317,8 +317,6 @@ header img {
   font-style: italic;
   font-size: 20px;
   margin: 20px 0px;
-  
- 
 }
 
 .team_groups {
@@ -346,14 +344,20 @@ header img {
   height: 16rem;
 }
 
-.person_social {
+.person_social , .footer_social{
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.person_social a {
+.person_social a , .footer_social a {
   color: white;
+}
+
+.person_social i,.footer_social i {
+  align-items: center;
+  padding:13px;
+  margin: auto;
 }
 
 .socials {
@@ -364,11 +368,11 @@ header img {
   margin: 5px;
   text-align: center;
   line-height: 50px;
+  
 }
 
-
 /* Company*/
- .company_groups {
+.company_groups {
   width: 100%;
   height: 280px;
   display: flex;
@@ -376,18 +380,135 @@ header img {
   justify-content: space-evenly;
   padding: 48px 0px;
   color: #212529;
- }
+}
 
- .company {
-  width:20%;
+.company {
+  width: 20%;
   height: 100px;
   padding: 40px;
- }
+}
 .company img {
   width: 100%;
   height: 64px;
 }
 
-
 /*Contact Us*/
+
+#contactSection {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/map-image.png);
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact_desc {
+  text-align: center;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.contact_desc h1 {
+  font-size: 40px;
+  padding: 30px 20px;
+}
+
+.contact_desc p {
+  padding: 20px;
+  color: rgb(193, 199, 205);
+  font: 20px "Montserrat", sans-serif;
+}
+
+.contact_form {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px 20px ; */
+}
+
+.form input {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 25px;
+  color: #f4eded;
+  border-radius: 10px;
+}
+
+.text {
+  width: 40%;
+  height: 400px;
+  padding: 30px 30px;
+}
+
+.text textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  color: #f4eded;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact_button {
+  margin: 80px;
+  width: 230px;
+  height: 70px;
+  border: 0px;
+  background-color: #ffc800;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  /* justify-self: center; */
+}
+
+/*-footer--*/
+
+.footer_desc  {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+
+}
+
+.footer_title {
+  font-size: 20px;
+
+
+}
+
+.footer_nav ul, a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  gap:20px;
+  font-size: 20px;
+
+}
+
+.socials:hover{
+  background-color: #43474b;
+  
+}
 
