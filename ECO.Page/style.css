@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  /* background-color: #17a2b8; */
+}
+
+.header_page {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* gap: 160px; */
+}
+
+.logo {
+  width: 200px;
+  height: 120px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  list-style: none;
+}
+
+nav li {
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #596369;
+}
+nav a:hover {
+  color: #112433;
+}
+
+.header_icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  list-style: none;
+}
+
+.active a {
+  width: 50px;
+  height: 50px;
+  background-color: #408858;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px 10px;
+  color: #fff;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.3);
+}
+.fa-brands {
+  font-size: 31px;
+}
+.fa-brands:hover {
+  color: #408858;
+}
+
+#introPage .container {
+  width: 100%;
+  height: 700px;
+
+  background-image: url("http://ecoharvest.farm/d1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#introPage .container img {
+  width: 100%;
+}
+
+.container_title {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px 20px;
+  /* left: 30px; */
+  font-size: 24px;
+}
+
+.container_title p {
+  padding-right: 29%;
+  margin-left: 100px;
+  text-align: center;
+  height: 270px;
+  letter-spacing: 2px;
+}
+
+.container_btn {
+  color: #fff;
+  /* display: inline-block; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 90px 70px 0 90px;
+  margin-left: 70px;
+  position: relative;
+  text-transform: capitalize;
+  transform: perspective(1px) translateZ(0px);
+  transition: 0.3s;
+  border-radius: 0;
+  border: none;
+}
+
+.redBtn {
+  background-color: red;
+  width: 50%;
+  height: 300px;
+  line-height: 30px;
+}
+
+.greenBtn {
+  background-color: #408858;
+  width: 50%;
+  height: 300px;
+}
+
+#aboutPage {
+  width: 100%;
+  height: 800px;
+  padding-top: 20px;
+ 
+  
+}
+
+#aboutPage .container {
+    width: 100%;
+    height: 600px;
+    /* padding: 20px; */
+    margin: 30px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  
+
+
+}
+
+.about_image img{
+    height: 100px;
+    width: 30%;
+}
+
+.about_title {
+    width: 40%;
+
+}
