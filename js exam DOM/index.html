@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+
+<body>
+
+
+
+    <input type="text" id="num1" placeholder="Ədəd daxil edin: 1">
+    <input type="text" id="num2" placeholder="Ədəd daxil edin: 2">
+    <h1 id="result">Nəticə: </h1>
+    <button onclick="performOperation('add')">Topla</button>
+    <button onclick="performOperation('subtract')">Çıx</button>
+    <button onclick="performOperation('multiply')">Vur</button>
+    <button onclick="performOperation('divide')">Böl</button>
+    <button onclick="clearFields()">Təmizlə</button>
+
+
+    <br>
+    <br>
+
+    <br>
+
+    <input type="text" name="" id="word" placeholder="Soz daxil edin">
+    <button onclick="reverseWord()">convert</button>
+    <p id="netice"></p>
+
+
+
+    <br>
+    <br>
+    <br>
+    <input type="text" name="" id="widthInput" placeholder="width">
+    <input type="text" name="" id="heightInput" placeholder="height">
+    <input type="text" name="" id="borderInput" placeholder="border width">
+    <br>
+    <br>
+    <br>
+
+    <select name="" id="borderSelect">
+        <option value="">Border style</option>
+        <option value="dotted">dotted</option>
+        <option value="solid">solid</option>
+        <option value="dashed">dashed</option>
+    </select>
+
+    <select name="" id="borderColorSelect">
+        <option value="">Border color</option>
+        <option value="red">red</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+    </select>
+    <select name="" id="colorSelect">
+        <option value="">color</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+    </select>
+    <select name="" id="backgroundSelect">
+        <option value="">Background color</option>
+        <option value="purple">purple</option>
+        <option value="yellow">yellow</option>
+        <option value="brown">brown</option>
+    </select>
+    <button id="submitBtn">Ok</button>
+
+    <div style="width: 500px; height: 500px;" id="mainDiv">Hello!</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
