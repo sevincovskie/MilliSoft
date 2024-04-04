@@ -59,13 +59,13 @@ document.querySelector("#submitBtn").addEventListener("click", function () {
   console.log(document.querySelector("#backgroundSelect").value);
 
   document.querySelector("#mainDiv").style.width =
-  document.querySelector("#widthInput").value ;
+    document.querySelector("#widthInput").value;
 
   document.querySelector("#mainDiv").style.height =
-  document.querySelector("#heightInput").value ;
+    document.querySelector("#heightInput").value;
 
   document.querySelector("#mainDiv").style.borderWidth =
-  document.querySelector("#borderInput").value;
+    document.querySelector("#borderInput").value;
 
   document.querySelector("#mainDiv").style.border =
     document.querySelector("#borderSelect").value;
@@ -73,12 +73,11 @@ document.querySelector("#submitBtn").addEventListener("click", function () {
   document.querySelector("#mainDiv").style.backgroundColor =
     document.querySelector("#backgroundSelect").value;
 
-    document.querySelector("#mainDiv").style.borderColor =
+  document.querySelector("#mainDiv").style.borderColor =
     document.querySelector("#borderColorSelect").value;
 
-    document.querySelector("#mainDiv").style.color =
+  document.querySelector("#mainDiv").style.color =
     document.querySelector("#colorSelect").value;
-
 });
 
 //Task 4
@@ -96,28 +95,36 @@ inputHeight.addEventListener("change", function () {
   newHeight.value = "";
 });
 inputBorder.addEventListener("change", function () {
- let newBorder = Number(document.querySelector("#inputBorder").value);
+  let newBorder = Number(document.querySelector("#inputBorder").value);
   border = document.querySelector("#div").style.borderWidth.split("px");
   div.style.borderWidth = Number(border[0]) + newBorder + "px";
   newBorder.value = "";
 });
 
 
-//task11
+document.addEventListener("DOMContentLoaded", function () {
+  let accordions = document.querySelectorAll(".accordion");
 
- let accordion = document.getElementsByClassName("accordion");
- let panel = document.getElementsByClassName("panel");
- let i;
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function () {
+      
+      document.querySelectorAll(".accordion_group").forEach((element) => {
+        element.style.height = "100px";
+        element.children[0].children[0].style.transform = "rotate(0deg)";
+        element.children[0].children[0].style.color = "black";
+        element.children[0].children[1].style.color = "black";
+        console.log(element);
+      });
 
- for (i = 0; i <accordion.length; i++) {
-  accordion[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    let panel =this.nextElementSibling;
-    if (panel.style.display === "block"){
-      panel.style.display ="none";
-    }else {
-      panel.style.display = "block";
-    }
-
-  })
- }
+      let panel = this.parentElement;
+      console.log(panel.offsetHeight);
+      panel.style.height = panel.offsetHeight === 100 ? "200px" : "100px";
+      this.children[0].style.color =
+        panel.offsetHeight === 100 ? "blue" : "black";
+      this.children[0].style.transform =
+        panel.offsetHeight === 100 ? "rotate(90deg)" : "rotate(0deg)";
+      this.children[1].style.color =
+        panel.offsetHeight === 100 ? "blue" : "black";
+    });
+  });
+});
